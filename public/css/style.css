@@ -116,9 +116,11 @@ main {
 }
 
 section {
+  margin-top: 60px; /* Adjust this based on the navbar height */
   margin-bottom: 40px; /* Space below each section */
   padding: 60px 0; /* Optional: increase padding inside sections */
   position: relative;
+  padding-top: 60px;
 }
 
 .block, .block2 {
@@ -137,4 +139,15 @@ section {
   font-size: 2.5rem; /* Adjust size as needed */
   color: #333; /* Adjust color as needed */
   margin: 0; /* Remove default margin */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+body {
+  padding-top: 56px; /* Adjust based on the height of your navbar */
 }
